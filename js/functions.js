@@ -28,7 +28,7 @@
          
        let sum = 0;
        dividers.forEach(divider => {
-           sum += divider
+           sum += divider;
        });
        
      
