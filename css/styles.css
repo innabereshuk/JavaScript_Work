@@ -47,3 +47,113 @@ a, button {
     text-align: center;
     font-size: 1.8rem;
 }
+
+.resizer {
+    /* border: 4px solid #45dd90; */
+    background-color: #45dd90;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    box-sizing: border-box;
+}
+
+.resizer__corner {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(184, 130, 130);
+    opacity: 0.5;
+    transition: opacity .8s ease-in-out;
+    position: absolute;
+    cursor: grab;
+}
+
+.resizer__corner:active {
+  cursor: grabbing;
+}
+
+.resizer__corner:hover {
+    opacity: .8;
+}
+
+.left-top {
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+.right-top {
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.left-bottom {
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%); 
+}
+
+.right-bottom {
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+}
+
+.wrap {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.box {
+    position: relative;
+    width: 45%;
+    border: 5px solid #45dd90;
+    transition: all .5s ease-in-out;
+}
+
+.box--right {
+    border-color: #c8ee3d;
+}
+
+.box--right .box__inner {
+    background-color: #c8ee3d;
+}
+
+.box--left .box__inner {
+    background-color: #45dd90;
+}
+
+.ball {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #45dd90;
+    margin: 5px;
+}
+
+.square {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #83a01a;
+}
+
+[hidden] {
+    opacity: .7;
+}
+
+.box__count {
+    position: absolute;
+    font-size: 200px;
+    color: rgb(114, 99, 99);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
