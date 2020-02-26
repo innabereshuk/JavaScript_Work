@@ -38,22 +38,77 @@
         </tbody>
     </table>
 
-    <button data-modal="open">Open Modal</button>
-    <button data-modal="close">Close Modal</button>
+   <div class="wrap">
+        <div class="box box--left">
+           <span class="box__inner ball" draggable="true"></span>
+           <span class="box__inner ball" draggable="true"></span>
+           <span class="box__inner ball" draggable="true"></span>
+           <span class="box__inner ball" draggable="true"></span>
 
+           <div class="box__count">0</div>
+        </div>
+        <div class="box box--right">
+            <span class="box__inner square" draggable="true"></span>
+            <span class="box__inner square" draggable="true"></span>
+            <span class="box__inner square" draggable="true"></span>
+            <span class="box__inner square" draggable="true"></span>
+
+            <div class="box__count">0</div>
+        </div>
+   </div>
+
+
+    <div class="resizer" hidden>
+        <div class="resizer__corner left-top"></div>
+        <div class="resizer__corner left-bottom"></div>
+        <div class="resizer__corner right-top"></div>
+        <div class="resizer__corner right-bottom"></div>
+    </div>
+
+     <div hidden>
+          <div hidden>
+              <label for="minutes">Укажите время таймера в минутах</label>
+              <input  name="minutes" id="minutes" type="text" value="0.02">
+              <button id="start"> Start 20 sec timer</button>
+              <button id="stop"> Stop 20 sec timer</button>
+          </div>
+          
+       
+         <h1 id="countUp"></h1>
+         <h1 id="countDown"></h1>
+    
+        <table class="table" id="table" hidden>
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Created At</th>
+                    <th scope="col">Updated At</th>
+                </tr>
+            </thead>
+            <tbody>
+        
+            </tbody>
+        </table>
+    
+        <button data-modal="open">Open Modal</button>
+        <button data-modal="close">Close Modal</button>
+
+    </div>  
   
 
 
     <script src="js/scripts.js"></script> 
-    <!-- <script src="js/data-types.js"></script> -->
-    <!-- <script src="js/online-test.js"></script> -->
-    <!-- <script src="js/check-date.js"></script> -->
+    <script src="js/data-types.js"></script> 
+    <script src="js/online-test.js"></script> 
+     <script src="js/check-date.js"></script>
      <script src="js/objects.js"></script> 
      <script src="js/array-styles.js"></script> 
-    <!-- <script src="js/calculator.js"></script> -->
-    <!-- <script src="js/functions.js"></script> -->
-    <!-- <script src="js/beeper.js"></script> -->
+    <script src="js/calculator.js"></script> 
+     <script src="js/functions.js"></script>
+     <script src="js/beeper.js"></script> 
      <script src="js/arrays.js"></script>
-     <script src="js/modal.js"></script> 
+     <script src="js/modal.js"></script>  
 </body>
 </html>
